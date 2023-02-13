@@ -1,0 +1,423 @@
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+%\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm,footskip=1\baselineskip}
+
+\usepackage{paracol}
+\usepackage{multicol}
+\usepackage{ragged2e}
+\usepackage{hyperref}
+\hypersetup{hidelinks}
+\ifxetexorluatex
+  \setmainfont{Lato}
+\else
+  \usepackage[default]{lato}
+\fi
+
+%\def\faSkype{\FA\symbol{"F17E}}
+%\newsavebox{\skypeicon}
+%\savebox{\skypeicon}{\includegraphics[height=.8\baselineskip]{example-image}}
+%\newcommand{\skypesocialsymbol}{\usebox{\skypeicon}}
+
+%\newcommand\faSkype{{\FA\symbol{"F17E}}}
+%\newcommand*{\skypesocialsymbol}{\faSkype~}
+\makeatletter
+\newcommand*{\skypesocialsymbol}{\includegraphics[height=.7\baselineskip]{skype_gray}}
+%\collectionadd[skype]{socials}{ SK}
+%\makeatother
+
+
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+% \colorlet{name}{black}
+% \colorlet{tagline}{PastelRed}
+\colorlet{heading}{VividPurple}
+\colorlet{headingrule}{VividPurple}
+% \colorlet{subheading}{PastelRed}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\definecolor{accent}{HTML}{000e17}
+\definecolor{heading}{HTML}{000e17}
+\definecolor{emphasis}{HTML}{696969}
+\definecolor{body}{HTML}{01415f}
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\begin{document}
+\name{Hossein Khalilian Gourtani}
+\tagline{M.Sc. (Graduation date September 2021)}
+\personalinfo{
+\mail{\href{mailto:hse.khalilian08@gmail.com}{hse.khalilian08@gmail.com}}
+% \skype{live:70027c6e0ce27aa8}
+\phone{\href{tel:+989205202400}{+989205202400}}
+% \location{Tehran, IR}
+% \homepage{marissamayr.tumblr.com}
+% \social[skype]{SK}
+\github{\href{https://github.com/hossein-khalilian}{github.com/hossein-khalilian}} 
+\linkedin{\href{https://www.linkedin.com/in/hosein-khalilian/}{linkedin.com/in/hosein-khalilian}}
+}
+
+\makecvheader
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.6}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+%\begin{paracol}{1}
+
+
+%%%%%%%% Summary %%%%%%%
+%\cvsection{Summary}
+%\begin{flushleft}
+%	\justifying
+%	AI Expert with more than 4 years of experience. Advanced understanding of statistical, algebraic and other analytical techniques. Skilled in machine learning, data visualization, problem solving, and programming. Well-qualified Data Scientist experienced working with vast data sets to break down information, gather relevant points and solve advanced problems.
+%\end{flushleft}
+
+
+ %%%%%%%%%%%%%% Education %%%%%%%%%%%%%%%
+\cvsection{Education}
+\vspace*{-.5\multicolsep}
+\cvevent{}{M.Sc. Computer Engineering (Artificial Intelligence)}{Sep 2018 -- Sep 2021}{Amirkabir University of Technology, Tehran, Iran}
+\vspace*{-1\multicolsep}
+\begin{multicols}{2}
+	\begin{itemize}
+		\item GPA: 3.87/4
+		\item Dissertation title: "Distributed Deep Learning for Big Data"
+		\item 4th Rank among 53 Students
+		\item Advisor: Dr. Maryam Amir Haeri
+	\end{itemize}
+\end{multicols}
+
+\vspace*{-1.5\multicolsep}
+\divider
+
+\cvevent{}{B.Sc. Information Technology (Double Degree)}{Sep 2014 -- Sep 2018}{Isfahan University of Technolog, Isfahan, Iran}
+\vspace*{-1\multicolsep}
+\begin{multicols}{2}
+	\begin{itemize}
+		\item GPA: 3.88/4
+		\item 1st Rank among  75 Students
+	\end{itemize}
+\end{multicols}
+
+\vspace*{-1.5\multicolsep}
+\divider
+
+\cvevent{}{B.Sc. Electrical Engineering (Communication)}{Sep 2013 -- Sep 2018}{Isfahan University of Technolog, Isfahan, Iran}
+\vspace*{-1\multicolsep}
+\begin{multicols}{2}
+	\begin{itemize}
+		\item GPA: 3.88/4
+		\item Thesis: "Design and Implementation of VoIP Gateway"
+		\item  Top 10\% among  120 students
+	\end{itemize}
+\end{multicols}
+\vspace*{-.5\multicolsep}
+
+
+ %%%%%%%%%%%%%% Research %%%%%%%%%%%%%%%
+\cvsection{Research Interests}
+\vspace*{-1\multicolsep}
+\begin{multicols}{3}
+	\begin{itemize}
+		\item Graph Neural Networks
+		\item Deep Reinforcement Learning
+		\item  Large-Scale Machine Learning
+		\item Natural Language Processing
+%		\item Distributed Learning
+		\item Deep Learning
+		\item Mathematics
+		\item Time Series 
+		\item Big Data
+		\item Complex Networks
+		
+	\end{itemize}
+\end{multicols}
+\vspace*{-.5\multicolsep}
+
+
+ %%%%%%%%%%%%%% Course %%%%%%%%%%%%%%%
+\cvsection{Selected Courses}
+\vspace*{-1\multicolsep}
+\begin{multicols}{3}
+	\begin{itemize}
+		\item Machine Learning
+		\item Neural Networks
+		\item Big Data Analytics
+		\item  Algorithms for Complex Networks
+		\item Evolutionary Computing
+		\item Convex Optimization
+		\item Statistical Pattern Recognition
+		\item Image Processing
+		\item Databases
+		\item Advanced Programming
+		\item Data Structures
+		\item Computer Networks
+	\end{itemize}
+\end{multicols}
+%\vspace*{-1\multicolsep}
+
+%%%%%%%%%%%%%%%%%%%%%%% Honors %%%%%%%%%%%%%%%%%%%%%
+\cvsection{Working Papers}
+	Evaluating Different Techniques of Reinforcement Learning and Graph Representation Learning for Device Placement Problem
+
+%%%%%%%%%%%%%%%%%%%%% Thesis %%%%%%%%%%%%%%%%%%%%%%%%%
+%\cvsection{Master Thesis}
+%\begin{itemize}
+%	\item[] Title: Distributed Deep Learning for Big Data
+%	\item[] \justifying
+%	Description: Minimizing run-time of a distributed neural network training in a model-parallelism manner. We use graph representation learning to obtain an embedding for each node in the computation graph, and use reinforcement learning for finding efficient device placements. This approach can be generalized for unseen graphs.
+%\end{itemize}
+
+
+%%%%%%%%%%%% Teaching Experience %%%%%%%%%%%%%
+\cvsection{Teaching Experience}
+
+%%%%%%%%%%%%%%Experience 1%%%%%%%%%%%%%
+%\vspace*{-.5\multicolsep}
+\cvevent{Amirkabir University of Technology, Tehran, Iran}{Teaching Assistant, Professor Nazerfard, Machine Learning}{February 2021 -- July 2021}{}
+\vspace*{-.25\multicolsep}
+Developed syllabus and overall course structure, conducted students, and administered the grades
+
+%\vspace*{-1.5\multicolsep}
+%\begin{multicols}{2}
+%\begin{itemize}
+%	\item Tutoring students
+%%	\item Helping for developing course plane
+%	\item Designing homeworks and projects
+%%	\item Recording students' homeworks grades
+%	%	Holding the question and answer class
+%%	\item Instructor professor Nazerfard
+%\end{itemize}
+%\end{multicols}
+%\vspace*{-0.5\multicolsep}
+%\divider
+
+\vspace*{+.5\multicolsep}
+%%%%%%%%%%%%%%Experience 2%%%%%%%%%%%%%
+\cvevent{Isfahan University of Technology, Isfahan, Iran}{Teaching Assistant, Professor Moayedian, Computer Networks}{March 2017 -- July 2017}{}
+\vspace*{-.25\multicolsep}
+Developed syllabus and course structure, held question answering sessions, and administered the grades
+%\vspace*{-1.3\multicolsep}
+%\begin{multicols}{2}
+%	\begin{itemize}
+%		\item Holding office hours to answering questions
+%		\item Designing homeworks and projects
+%%		\item Evaluating students
+%%		\item Instructor professor Moayedian
+%	\end{itemize}
+%\end{multicols}
+%\vspace*{-0.5\multicolsep}
+%\divider
+
+\vspace*{+.5\multicolsep}
+%%%%%%%%%%%%%%Experience 3%%%%%%%%%%%%%
+\cvevent{Isfahan University of Technology, Isfahan, Iran}{Lab Assistant, Professor Fanian, Computer Networks Lab}{September 2017 -- Januery 2018}{}
+\vspace*{-.25\multicolsep}
+Developed lab instructions and overall lab structure,  held lab sessions, mentored students and administered the grades
+%\vspace*{-1\multicolsep}
+%\begin{multicols}{2}
+%	\begin{itemize}
+%		\item Presenting and guiding students
+%		\item Managing lab sessions 
+%%		\item Designing final projects
+%%		\item Evaluating students
+%%		\item Instructor professor Fanian
+%	\end{itemize}
+%\end{multicols}
+%%\vspace*{+1.5\multicolsep}
+
+
+
+
+
+
+\clearpage
+ %%%%%%%%%%%%%% Research %%%%%%%%%%%%%%%
+\cvsection{Research Experience}
+
+%\vspace*{-.5\multicolsep}
+%\begin{paracol}{1}
+\cvevent{}{}{May 2021 -- July 2021}{}
+\begin{itemize}
+	\item Liveness Detection using Knowledge Distillation for Anomaly Detection
+\end{itemize}
+
+\cvevent{}{}{September 2019 -- July 2021}{}
+\begin{paracol}{1}
+	\begin{itemize}
+		\item Solving Placement Problem for Deep Neural Networks using Deep Reinforcement Learning and Graph Representation Learning Techniques as master thesis
+		\switchcolumn
+%		\item Master's Project
+	\end{itemize}
+\end{paracol}
+
+%	\switchcolumn
+
+%\cvevent{}{}{ October 2017 -- June 2019}{}
+%\begin{itemize}
+%	\item Detection of Earth Dam Breaching using
+%	OpenCV and image processing
+%\end{itemize}
+
+%	\cvevent{}{}{June 2017 -- June 2018}{}
+%	\begin{paracol}{2}
+%	\begin{itemize}
+%		\item Design and Implementation of VoIP Gateway (Python)
+%		\switchcolumn
+%		\item Undergraduate Final Project
+%	\end{itemize}
+%	\end{paracol}
+%\end{paracol}
+
+ %%%%%%%%%%%%%% Experience %%%%%%%%%%%%%%%
+\cvsection{Related Experience}
+
+\cvevent{}{\href{https://mom.ir/en}{Mom Center} (Data Scientist)}{November 2021 -- Current}{Tehran}
+\vspace*{-1\multicolsep}
+\begin{multicols}{2}
+	\begin{itemize}
+		\justifying
+		\item \small{Improving Persian Automatic Speech Recognition Models}
+		\item\small{Solving Item Matching Problem for Products using Vector Databases}
+		\item\small{Developing News Article Recommender System}
+		\item\small{Text Summarization and Keyboard Extraction using Sentence-Transformers}
+		\item\small{Developing APIs for the Systems and Dockerizing Projects}
+	\end{itemize}
+\end{multicols}
+\vspace*{-.5\multicolsep}
+
+
+
+ %%%%%%%%%%%%%% Experience1 %%%%%%%%%%%%%%%
+\cvevent{}{\href{https://o.emofid.com/en}{Mofid Securities} (Internship)}{April 2021 -- July 2021}{Tehran}
+\vspace*{-1\multicolsep}
+\begin{multicols}{2}
+\begin{itemize}
+\justifying
+\item \small{Gathering, cleaning, and pre-processing data for training deep learning models}
+\item\small{Designing and training new models for anomaly detection in images}
+\item\small{Exporting and quantizing trained models for improving inference time}
+\item\small{Dockerizing projects and designing APIs for products}
+\end{itemize}
+\end{multicols}
+\vspace*{-.5\multicolsep}
+%\divider
+
+ %%%%%%%%%%%%%% Experience2 %%%%%%%%%%%%%%%
+%\cvevent{}{Mashan Company}{July 2019 -- December 2019}{Tehran}
+%
+%\vspace*{-1\multicolsep}
+%\begin{multicols}{2}
+%\begin{itemize}
+%	\justifying
+%%	\setlength{\itemindent}{0.5em}
+%%	\item \small{Web crawling, processing and interpreting data structures}
+%	\item \small {Data visualization using techniques like PCA and T-SNE}
+%	\item \small Designing machine learning and deep learning models for visualization, clustering, and classification
+%%	\item \small {Working on ideas, prototyping, and proving concepts in close collaboration of other colleagues and advisors from third-party universities}
+%%	\item \small {Communicating and team working}
+%\end{itemize}
+%\end{multicols}
+%\vspace*{-1.5\multicolsep}
+
+
+
+ %%%%%%%%%%%%%% Voluntary %%%%%%%%%%%%%%%
+\cvsection{Voluntary Works}
+\vspace*{-1\multicolsep}
+\begin{multicols}{2}
+\begin{itemize}
+	\item  \small{Senior Member and Head of Electrical Engineering Students Scientific Association (2016 \& 2017)}
+	\item \small{Member of organizing committee in IUT Startup Weekend (2015 \& 2016)}
+	\item \small Teaching AVR for freshman students in electrical engineering department (2016)
+	\item \small Member of organizing committee of Second Iranian Competition on Smart Grid (2016)
+\end{itemize}
+\end{multicols}
+%\vspace*{-1\multicolsep}
+
+
+%%%%%%%%%%%%%%%%%%%%%%% Honors %%%%%%%%%%%%%%%%%%%%%
+\cvsection{Honors \& Awards}
+\vspace*{-1\multicolsep}
+\begin{multicols}{2}
+	\begin{itemize}
+		\item Admitted for master program at Amirkabir University of Technology and Isfahan University of Technology without entrance exam
+		\item Awarded as an exceptional talent student and accepted for studying double major B.Sc. program at Isfahan University of Technology
+	\end{itemize}
+\end{multicols}
+\vspace*{-1\multicolsep}
+
+
+ %%%%%%%%%%%%%% Skills %%%%%%%%%%%%%%%
+\cvsection{Professional Skills}
+
+\vspace*{-.5\multicolsep}
+\begin{multicols}{3}
+	\begin{itemize}
+		\item Python (NumPy, Pandas, Transformers, Scikit-learn, gRPC)
+		\item Machine Learning
+		\item Natural Language Processing
+        \item Automatic Speech Recognition
+        \item Recommender Systems
+        \item Semantic Search
+		\item Deep Reinforcement Learning 
+		\item PyTorch \& Tensorflow
+		\item SQL \& NoSQL
+		\item Mathematics \& Statistics
+		\item Graph Algorithms
+		\item Linear Algebra
+% 		\item Problem Solving
+		\item Data Visualization
+		\item Git
+% 		\item Matlab
+	\end{itemize}
+\end{multicols}
+\vspace*{-.5\multicolsep}
+
+ %%%%%%%%%%%%%% Languages %%%%%%%%%%%%%%%
+\cvsection{Languages}
+
+\vspace*{-1\multicolsep}
+\begin{multicols}{2}
+\begin{itemize}
+	\item English (Proficient)
+	\item Persian (Native)
+\end{itemize}
+\end{multicols}
+\vspace*{-1\multicolsep}
+
+
+
+ %%%%%%%%%%%%%% References %%%%%%%%%%%%%%%
+\cvsection{References}
+
+	\vspace*{-.5\multicolsep}
+	\setlength{\columnsep}{0cm}
+	\begin{multicols}{3}
+		\cvref{\href{https://people.utwente.nl/m.amirhaeri} {Dr. Maryam Amir Haeri}}{\href{https://www.utwente.nl/en/}{University of Twente}}{\href{mailto:m.amirhaeri@utwente.nl}{m.amirhaeri@utwente.nl}}{}
+		Relation: Master thesis supervisor
+		
+		\cvref{\href{https://www.kth.se/profile/payberah}
+			{Dr. Amir Hossein Payberah}}{\href{https://www.kth.se/en}{KTH Royal Institute of Technology}}{\href{mailto:payberah@kth.se}{payberah@kth.se}}{}
+				Relation: Master thesis advisor
+				
+		\cvref{\href{https://ce.aut.ac.ir/~nazerfard/main.htm}
+			{Dr. Ehsan Nazerfard}}{\href{https://aut.ac.ir/en}{Amirkabir University of Technology}}{\href{mailto:nazerfard@aut.ac.ir}{nazerfard@aut.ac.ir}}{}
+			Relation: Teacher Assistant
+	\end{multicols}
+
+%\end{paracol}
+
+\end{document}
