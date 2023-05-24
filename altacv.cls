@@ -212,10 +212,16 @@
 	\tikz[baseline]\node[anchor=base,draw=body!30,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{#1};
 }
 
-\newcommand{\cvskill}[2]{%
-	\textcolor{emphasis}{\textbf{#1}}\hfill
-	\foreach \x in {1,...,5}{%
-		\space{\ifnumgreater{\x}{#2}{\color{body!30}}{\color{accent}}\ratingmarker}}\par%
+% \newcommand{\cvskill}[2]{%
+% 	\textcolor{emphasis}{\textbf{#1}}\hfill
+% 	\foreach \x in {1,...,5}{%
+% 		\space{\ifnumgreater{\x}{#2}{\color{body!30}}{\color{accent}}\ratingmarker}}\par%
+% }
+
+\newcommand{\cvskill}[1]{%
+	\textcolor{emphasis}{\textbf{#1}}\par
+	% \foreach \x in {1,...,5}{%
+	% 	\space{\ifnumgreater{\x}{#2}{\color{body!30}}{\color{accent}}\ratingmarker}}\par%
 }
 
 % Adapted from @Jake's answer at http://tex.stackexchange.com/a/82729/226
